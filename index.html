@@ -12,331 +12,623 @@
 
 <body>
     <header class="dt-header">
-        <div class="dt-header__content">
+
+        <div class="dt-header___content">
             <div class="container">
-                <h1 class="dt-header__logo">
-                    <a title="in tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí"
-                        href="https://dantri.com.vn/">
+                <div class="dt-header__logo">
+                    <a title="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7" href="/">
                         <img src="https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png"
-                            alt="Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí">
+                            alt="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7">
                     </a>
-                </h1>
-                <div class="corona">
-                    <div onclick="location.href='https://dantri.com.vn/suc-khoe/dai-dich-covid-19.htm'"
-                        class="corona-banner">
-                        <iframe class="corona-iframe">
-                            src="https://gadgets.dantri.com.vn/corona/mini"></iframe>
+                </div>
+
+                <div class="xds-2">
+                    <div onclick="location.href='https://dantri.com.vn/suc-khoe/dai-dich-covid-19.htm'" class="corona-banner"
+                        style="margin: 10px auto;width: 670px!important;cursor: pointer; display: inline-block;">
+                        <iframe style="width: 100%; pointer-events: none; height: 30px;" frameborder="0"
+                            src="https://gadgets.dantri.com.vn/corona/mini"> </iframe>
                     </div>
                 </div>
-                <form class="search-box">
+
+                <form method="GET" action="https://dantri.com.vn/tim-kiem.htm" class="search-box ng-pristine ng-valid">
                     <label>
-                        <input type="text" class="form-control search-box__input" placeholder="Tìm kiếm tin tức">
+                        <input type="text" class="form-control search-box__input" name="s"
+                            placeholder="Tìm kiếm tin tức" autocomplete="off">
                     </label>
-                    <button class="btn search-box__btn">
-                        <i class="fa fa-search fa-2x"></i>
+                    <button class="btn search-box__btn" type="submit">
+                        <i class="dt-icon fa fa-search fa-2x"></i>
                     </button>
                 </form>
+
             </div>
         </div>
 
         <nav class="site-menu">
             <div class="container">
-                <ul class="site-menu__list">
+                <ol class="site-menu__list list-unstyled">
+
                     <li class="home">
-                        <a title="trang chu" href="https://dantri.com.vn"><i class="fa fa-home fa-2x"></i> </a>
+                        <a title="Trang chủ" href="https://dantri.com.vn">
+                            <i class="dt-icon fa fa-home fa-2x"></i>
+                        </a>
                     </li>
 
                     <li class="dropdown dropdown--hover">
-                        <a title="Video" href="https://dantri.com.vn/video-page.htm">Video</a>
+                        <a href="https://dantri.com.vn/video-page.htm">Video</a>
                     </li>
 
                     <li class="dropdown dropdown--hover">
-                        <a title="Sự kiện" href="https://dantri.com.vn/su-kien.htm">Sự kiện</a>
+                        <a class="" title="Tin tức sự kiện nóng mới nhất, cập nhật liên tục"
+                            href="https://dantri.com.vn/su-kien.htm">Sự kiện</a>
                     </li>
 
                     <li class="dropdown dropdown--hover">
-                        <a title="Xã hội" href="https://dantri.com.vn/xa-hoi.htm">Xã hội</a>
-                        <div class="dropdown-top">
-                            <ul class="site-menu__dropdown">
-                                <li> <a title="Chính trị" href="https://dantri.com.vn/xa-hoi/chinh-tri.htm">Chính
+                        <a class="" title="Xã hội  - Tin tức đa dạng về xã hội, gia đình, du lịch, mẹo vặt cuộc sống"
+                            href="https://dantri.com.vn/xa-hoi.htm">Xã hội</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Chính trị" href="https://dantri.com.vn/xa-hoi/chinh-tri.htm">Chính
                                         trị</a>
                                 </li>
-                                <li> <a title="Phóng sự - Ký sự"
-                                        href="https://dantri.com.vn/xa-hoi/phong-su-ky-su.htm">Phóng sự
-                                        - Ký sự</a></li>
-                                <li> <a title="Giao thông" href="https://dantri.com.vn/xa-hoi/giao-thong.htm">Giao
+                                <li>
+                                    <a title="Phóng sự-Ký sự"
+                                        href="https://dantri.com.vn/xa-hoi/phong-su-ky-su.htm">Phóng
+                                        sự-Ký sự</a>
+                                </li>
+                                <li>
+                                    <a title="Giao thông" href="https://dantri.com.vn/xa-hoi/giao-thong.htm">Giao
                                         thông</a>
                                 </li>
-                                <li> <a title="Môi trường" href="https://dantri.com.vn/xa-hoi/moi-truong.htm">Môi
+                                <li>
+                                    <a title="Môi trường" href="https://dantri.com.vn/xa-hoi/moi-truong.htm">Môi
                                         trường</a>
                                 </li>
-                                <li><a title="Hồ sơ" href="https://dantri.com.vn/xa-hoi/ho-so.htm">Hồ sơ</a></li>
-                            </ul>
+                                <li>
+                                    <a title="Hồ sơ" href="https://dantri.com.vn/xa-hoi/ho-so.htm">Hồ
+                                        sơ</a>
+                                </li>
+                            </ol>
                         </div>
                     </li>
 
                     <li class="dropdown dropdown--hover">
-                        <a title="Thế giới" href="https://dantri.com.vn/the-gioi.htm">Thế giới</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="Châu á" href="https://dantri.com.vn/the-gioi/chau-a.htm">Châu á</a> </li>
-                                <li> <a title="Eu & Nga" href="https://dantri.com.vn/the-gioi/eu-nga.htm">EU & Nga</a>
+                        <a class="" title="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới"
+                            href="https://dantri.com.vn/the-gioi.htm">Thế
+                            giới</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Châu Á" href="https://dantri.com.vn/the-gioi/chau-a.htm">Châu
+                                        Á</a>
                                 </li>
-                                <li> <a title="Châu Mỹ" href="https://dantri.com.vn/the-gioi/chau-my.htm">Châu Mỹ</a>
+                                <li>
+                                    <a title="EU  Nga" href="https://dantri.com.vn/the-gioi/eu-nga.htm">EU
+                                        & Nga</a>
                                 </li>
-                                <li> <a title="Điểm nóng" href="https://dantri.com.vn/the-gioi/diem-nong.htm">Điểm
+                                <li>
+                                    <a title="Châu Mỹ" href="https://dantri.com.vn/the-gioi/chau-my.htm">Châu
+                                        Mỹ</a>
+                                </li>
+                                <li>
+                                    <a title="Điểm nóng" href="https://dantri.com.vn/the-gioi/diem-nong.htm">Điểm
                                         nóng</a>
                                 </li>
-                                <li> <a title="Tư liệu" href="https://dantri.com.vn/the-gioi/tu-lieu.htm">Tư liệu</a>
+                                <li>
+                                    <a title="Tư liệu" href="https://dantri.com.vn/the-gioi/tu-lieu.htm">Tư
+                                        liệu</a>
                                 </li>
-                                <li> <a title="Kiều bào" href="https://dantri.com.vn/the-gioi/kieu-bao.htm">Kiểu bào</a>
+                                <li>
+                                    <a title="Kiều bào" href="https://dantri.com.vn/the-gioi/kieu-bao.htm">Kiều
+                                        bào</a>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </li>
 
                     <li class="dropdown dropdown--hover">
-                        <a title="Thể thao" href="https://dantri.com.vn/the-thao.htm">Thể thao</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/the-thao-trong-nuoc.htm">Thể thao
-                                        trong
-                                        nước</a> </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/the-thao-quoc-te.htm">Thể thao
-                                        quốc
+                        <a class="" title="Tin tức thể thao 24h, lịch thi đấu, kết quả, video clip"
+                            href="https://dantri.com.vn/the-thao.htm">Thể
+                            thao</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Thể thao trong nước"
+                                        href="https://dantri.com.vn/the-thao/the-thao-trong-nuoc.htm">Thể
+                                        thao trong nước</a>
+                                </li>
+                                <li>
+                                    <a title="Thể thao quốc tế"
+                                        href="https://dantri.com.vn/the-thao/the-thao-quoc-te.htm">Thể
+                                        thao quốc tế</a>
+                                </li>
+                                <li>
+                                    <a title="Bóng đá trong nước"
+                                        href="https://dantri.com.vn/the-thao/bong-da-trong-nuoc.htm">Bóng
+                                        đá trong nước</a>
+                                </li>
+                                <li>
+                                    <a title="Châu Âu" href="https://dantri.com.vn/the-thao/chau-au.htm">Châu
+                                        Âu</a>
+                                </li>
+                                <li>
+                                    <a title="Bóng đá Anh" href="https://dantri.com.vn/the-thao/bong-da-anh.htm">Bóng
+                                        đá Anh</a>
+                                </li>
+                                <li>
+                                    <a title="Bóng đá TBN" href="https://dantri.com.vn/the-thao/bong-da-tbn.htm">Bóng
+                                        đá TBN</a>
+                                </li>
+                                <li>
+                                    <a title="Tennis" href="https://dantri.com.vn/the-thao/tennis.htm">Tennis</a>
+                                </li>
+                                <li>
+                                    <a title="Cờ vua" href="https://dantri.com.vn/the-thao/co-vua.htm">Cờ
+                                        vua</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Tin tức An sinh xã hội, thông tin đào tạo việc làm"
+                            href="https://dantri.com.vn/an-sinh.htm">An
+                            sinh</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Chính sách" href="https://dantri.com.vn/an-sinh/chinh-sach.htm">Chính
+                                        sách</a>
+                                </li>
+                                <li>
+                                    <a title="Việc làm" href="https://dantri.com.vn//an-sinh/viec-lam.htm">Việc
+                                        làm</a>
+                                </li>
+                                <li>
+                                    <a title="Đào tạo" href=https://dantri.com.vn/an-sinh/dao-tao.htm">Đào
+                                        tạo</a>
+                                </li>
+                                <li>
+                                    <a title="Gói an sinh 62.000 tỷ đồng"
+                                        href="https://dantri.com.vn//an-sinh/goi-an-sinh-62000-ty-dong.htm">Gói
+                                        an sinh 62.000 tỷ đồng</a>
+                                </li>
+                                <li>
+                                    <a title="Xuất khẩu lao động"
+                                        href="https://dantri.com.vn//an-sinh/xuat-khau-lao-dong.htm">Xuất
+                                        khẩu lao động</a>
+                                </li>
+                                <li>
+                                    <a title="Chúng tôi nói"
+                                        href="https://dantri.com.vn/an-sinh/chung-toi-noi.htm">Chúng
+                                        tôi nói</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Sức khỏe: Cẩm nang chăm sóc sức khỏe gia đình, cách Phòng Bệnh"
+                            href="https://dantri.com.vn/suc-khoe.htm">Sức
+                            khỏe</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Ung thư" href="https://dantri.com.vn/suc-khoe/ung-thu.htm">Ung
+                                        thư</a>
+                                </li>
+                                <li>
+                                    <a title="Kiến thức giới tính"
+                                        href="https://dantri.com.vn/suc-khoe/kien-thuc-gioi-tinh.htm">Kiến
+                                        thức giới tính</a>
+                                </li>
+                                <li>
+                                    <a title="Tư vấn" href="https://dantri.com.vn/suc-khoe/tu-van.htm">Tư
+                                        vấn</a>
+                                </li>
+                                <li>
+                                    <a title="Làm đẹp" href="https://dantri.com.vn/suc-khoe/lam-dep.htm">Làm
+                                        đẹp</a>
+                                </li>
+                                <li>
+                                    <a title="Ngày Thầy thuốc Việt Nam"
+                                        href="https://dantri.com.vn/suc-khoe/ngay-thay-thuoc-viet-nam.htm">Ngày
+                                        Thầy thuốc Việt Nam</a>
+                                </li>
+                                <li>
+                                    <a title="Đại dịch Covid-19"
+                                        href="https://dantri.com.vn/suc-khoe/dai-dich-covid-19.htm">Đại
+                                        dịch Covid-19</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Những số phận không may mắn và Tấm lòng nhân ái"
+                            href="https://dantri.com.vn/tam-long-nhan-ai.htm">Nhân
+                            ái</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Danh sách ủng hộ"
+                                        href="https://dantri.com.vn/tam-long-nhan-ai/danh-sach-ung-ho.htm">Danh
+                                        sách ủng hộ</a>
+                                </li>
+                                <li>
+                                    <a title="Danh sách kết chuyển"
+                                        href="https://dantri.com.vn/tam-long-nhan-ai/danh-sach-ket-chuyen.htm">Danh
+                                        sách kết chuyển</a>
+                                </li>
+                                <li>
+                                    <a title="Hoàn cảnh"
+                                        href="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm">Hoàn
+                                        cảnh</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Tin kinh doanh: Thị trường, tài chính, kinh tế, doanh nghiệp"
+                            href="https://dantri.com.vn/kinh-doanh.htm">Kinh
+                            doanh</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Tài chính - Đầu tư"
+                                        href="https://dantri.com.vn/kinh-doanh/tai-chinh-dau-tu.htm">Tài
+                                        chính - Đầu tư</a>
+                                </li>
+                                <li>
+                                    <a title="Thị trường" href="https://dantri.com.vn/kinh-doanh/thi-truong.htm">Thị
+                                        trường</a>
+                                </li>
+                                <li>
+                                    <a title="Doanh nghiệp"
+                                        href="https://dantri.com.vn/kinh-doanh/doanh-nghiep.htm">Doanh
+                                        nghiệp</a>
+                                </li>
+                                <li>
+                                    <a title="Khởi nghiệp" href="https://dantri.com.vn/kinh-doanh/khoi-nghiep.htm">Khởi
+                                        nghiệp</a>
+                                </li>
+                                <li>
+                                    <a title="Bảo vệ NTD" href="https://dantri.com.vn/kinh-doanh/bao-ve-ntd.htm">Bảo
+                                        vệ NTD</a>
+                                </li>
+                                <li>
+                                    <a title="Bảo hiểm" href="https://dantri.com.vn/kinh-doanh/bao-hiem.htm">Bảo
+                                        hiểm</a>
+                                </li>
+                                <li>
+                                    <a title="Quốc tế" href="https://dantri.com.vn/kinh-doanh/quoc-te.htm">Quốc
                                         tế</a>
                                 </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/bong-da-trong-nuoc.htm">Bóng đá
-                                        trong
-                                        nước</a> </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/chau-au.htm">Châu Âu</a> </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/bong-da-anh.htm">Bóng đá Anh</a>
-                                </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/bong-da-tbn.htm">Bóng đá TBN</a>
-                                </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/tennis.htm">Tennis</a> </li>
-                                <li> <a title="" href="https://dantri.com.vn/the-thao/vo-vua.htm">Cờ vua</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="An sinh" href="https://dantri.com.vn/an-sinh.htm">An sinh</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Chính sách</a> </li>
-                                <li> <a title="" href="">Việc làm</a> </li>
-                                <li> <a title="" href="">Đào tạo</a> </li>
-                                <li> <a title="" href="">Gói an sinh 62.000 tỷ đồng</a> </li>
-                                <li> <a title="" href="">Xuất khẩu lao động</a> </li>
-                                <li> <a title="" href="">Chúng tôi nói</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Sức khỏe" href="https://dantri.com.vn/suc-khoe.htm">Sức khỏe</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Ung thư</a> </li>
-                                <li> <a title="" href="">Kiến thức</a> </li>
-                                <li> <a title="" href="">Tư vấn</a> </li>
-                                <li> <a title="" href="">Làm đẹp</a> </li>
-                                <li> <a title="" href="">Ngày thầy thuốc Việt Nam</a> </li>
-                                <li> <a title="" href="">Đại dịch Covid-19</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Nhân ái" href="https://dantri.com.vn/tam-long-nhan-ai.htm">Nhân ái</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Danh sách ủng hộ</a> </li>
-                                <li> <a title="" href="">Danh sách kết chuyển</a> </li>
-                                <li> <a title="" href="">Hoàn cảnh</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Kinh doanh" href="https://dantri.com.vn/kinh-doanh.htm">Kinh doanh</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Tài chính-Đầu tư</a> </li>
-                                <li> <a title="" href="">Thị Trường</a> </li>
-                                <li> <a title="" href="">Doanh nghiệp</a> </li>
-                                <li> <a title="" href="">Khởi nghiệp</a> </li>
-                                <li> <a title="" href="">Bảo vệ NTD</a> </li>
-                                <li> <a title="" href="">Bảo hiểm</a> </li>
-                                <li> <a title="" href="">Quốc tế</a> </li>
-                                <li> <a title="" href="">Nhà đất</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Bất động sản" href="https://dantri.com.vn/bat-dong-san.htm">Bất động sản</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Dự án</a> </li>
-                                <li> <a title="" href="">Thị trường</a> </li>
-                                <li> <a title="" href="">Nhịp sống đô thị</a> </li>
-                                <li> <a title="" href="">Sống xanh</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Giáo dục" href="https://dantri.com.vn/giao-duc-khuyen-hoc.htm">Giáo dục</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Tin tuyển sinh</a> </li>
-                                <li> <a title="" href="">Khuyến học</a> </li>
-                                <li> <a title="" href="">Gương sáng</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Văn hóa" href="https://dantri.com.vn/van-hoa.htm">Văn hóa</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Đời sống văn hoá</a> </li>
-                                <li> <a title="" href="">Điện ảnh</a> </li>
-                                <li> <a title="" href="">Âm nhạc</a> </li>
-                                <li> <a title="" href="">Văn học</a> </li>
-                                <li> <a title="" href="">Sân khấu-Dân gian</a> </li>
-                                <li> <a title="" href="">Hạt giống tâm hồn</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Giải trí" href="https://dantri.com.vn/giai-tri.htm">Giải trí</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Sao Việt</a> </li>
-                                <li> <a title="" href="">Hollywood</a> </li>
-                                <li> <a title="" href="">Châu Á</a> </li>
-                                <li> <a title="" href="">Thời trang</a> </li>
-                                <li> <a title="" href="">Xem-Ăn-Chơi</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Du lịch" href="https://dantri.com.vn/du-lich.htm">Du lịch</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Tin tức</a> </li>
-                                <li> <a title="" href="">Khám phá</a> </li>
-                                <li> <a title="" href="">Món ngon - Điểm đẹp</a> </li>
-                                <li> <a title="" href="">Tour hay - Khuyến mãi</a> </li>
-                                <li> <a title="" href="">Video - Ảnh</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Pháp luật" href="https://dantri.com.vn/phap-luat.htm">Pháp luật</a>
-                        <div class="dropdown-top"></div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Nhịp sống trẻ" href="https://dantri.com.vn/nhip-song-tre.htm">Nhịp sống trẻ</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Người Việt trẻ</a> </li>
-                                <li> <a title="" href="">Teen đẹp</a> </li>
-                                <li> <a title="" href="">Phóng sự trẻ</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Sức mạnh số" href="https://dantri.com.vn/suc-manh-so.htm">Sức mạnh số</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Máy tính - Mạng</a> </li>
-                                <li> <a title="" href="">Di động - Viễn thông</a> </li>
-                                <li> <a title="" href="">Điện tử tiêu dùng</a> </li>
-                                <li> <a title="" href="">Nghe nhìn</a> </li>
-                                <li> <a title="" href="">Phần mềm - Bảo mật</a> </li>
-                                <li> <a title="" href="">Thủ thuật - Mẹo vặt</a> </li>
-                                <li> <a title="" href="">Thị trường công nghệ</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="dropdown dropdown--hover">
-                        <a title="Xe" href="https://dantri.com.vn/o-to-xe-may.htm">Xe++</a>
-                        <div class="dropdown-top">
-                            <ul>
-                                <li> <a title="" href="">Thị trường xe</a> </li>
-                                <li> <a title="" href="">Bảng giá ô tô</a> </li>
-                                <li> <a title="" href="">Văn hoá xe</a> </li>
-                                <li> <a title="" href="">Tư vấn xe</a> </li>
-                                <li> <a title="" href="">Đua xe</a> </li>
-                                <li> <a title="" href="">Giá xe</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="bars">
-                        <a title="bars"> <i class="fa fa-bars fa-2x"></i> </a>
-                        <div class="dropdown-top">
-                            <ul>
                                 <li>
-                                    <a title="Khoa học" href=" ">
+                                    <a title="Nhà đất" href="https://dantri.com.vn/kinh-doanh/nha-dat.htm">Nhà
+                                        đất</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="active" title="Tin tức thị trường bất động sản, nhà đất, dự án mới"
+                            href="https://dantri.com.vn/bat-dong-san.htm">Bất
+                            động sản</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Dự án" href="https://dantri.com.vn/bat-dong-san/du-an.htm">Dự
+                                        án</a>
+                                </li>
+                                <li>
+                                    <a title="Thị trường" href="https://dantri.com.vn/bat-dong-san/thi-truong.htm">Thị
+                                        trường</a>
+                                </li>
+                                <li>
+                                    <a title="Nhịp sống đô thị"
+                                        href="https://dantri.com.vn/bat-dong-san/nhip-song-do-thi.htm">Nhịp
+                                        sống đô thị</a>
+                                </li>
+                                <li>
+                                    <a title="Sống xanh" href="https://dantri.com.vn/bat-dong-san/song-xanh.htm">Sống
+                                        xanh</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Giáo dục - Thông tin tuyển sinh, du học mới nhất"
+                            href="https://dantri.com.vn/giao-duc-khuyen-hoc.htm">Giáo
+                            dục</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Tin tuyển sinh"
+                                        href="https://dantri.com.vn/giao-duc-khuyen-hoc/tin-tuyen-sinh.htm">Tin
+                                        tuyển sinh</a>
+                                </li>
+                                <li>
+                                    <a title="Khuyến học"
+                                        href="https://dantri.com.vn/giao-duc-khuyen-hoc/khuyen-hoc.htm">Khuyến
+                                        học</a>
+                                </li>
+                                <li>
+                                    <a title="Gương sáng"
+                                        href="https://dantri.com.vn/giao-duc-khuyen-hoc/guong-sang.htm">Gương
+                                        sáng</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" href="https://dantri.com.vn/van-hoa.htm">Văn
+                            hóa</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Đời sống văn hóa"
+                                        href="https://dantri.com.vn/van-hoa/doi-song-van-hoa.htm">Đời
+                                        sống văn hóa</a>
+                                </li>
+                                <li>
+                                    <a title="Điện ảnh" href="https://dantri.com.vn/van-hoa/dien-anh.htm">Điện
+                                        ảnh</a>
+                                </li>
+                                <li>
+                                    <a title="Âm nhạc" href="https://dantri.com.vn/van-hoa/am-nhac.htm">Âm
+                                        nhạc</a>
+                                </li>
+                                <li>
+                                    <a title="Văn học" href="https://dantri.com.vn/van-hoa/van-hoc.htm">Văn
+                                        học</a>
+                                </li>
+                                <li>
+                                    <a title="Sân khấu - Dân gian"
+                                        href="https://dantri.com.vn/van-hoa/san-khau-dan-gian.htm">Sân
+                                        khấu - Dân gian</a>
+                                </li>
+                                <li>
+                                    <a title="Hạt giống tâm hồn"
+                                        href="https://dantri.com.vn/van-hoa/hat-giong-tam-hon.htm">Hạt
+                                        giống tâm hồn</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Tin tức giải trí mới nhất 24h | showbiz  sao việt và thế giới"
+                            href="https://dantri.com.vn/giai-tri.htm">Giải
+                            trí</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Sao Việt" href="https://dantri.com.vn/giai-tri/sao-viet.htm">Sao
+                                        Việt</a>
+                                </li>
+                                <li>
+                                    <a title="Hollywood"
+                                        href="https://dantri.com.vn/giai-tri/hollywood.htm">Hollywood</a>
+                                </li>
+                                <li>
+                                    <a title="Châu Á" href="https://dantri.com.vn/giai-tri/chau-a.htm">Châu
+                                        Á</a>
+                                </li>
+                                <li>
+                                    <a title="Thời trang" href="https://dantri.com.vn/giai-tri/thoi-trang.htm">Thời
+                                        trang</a>
+                                </li>
+                                <li>
+                                    <a title="Xem - Ăn - Chơi" href="https://dantri.com.vn/giai-tri/xem-an-choi.htm">Xem
+                                        - Ăn - Chơi</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" href="https://dantri.com.vn/du-lich.htm">Du
+                            Lịch</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Tin tức" href="https://dantri.com.vn/du-lich/tin-tuc.htm">Tin
+                                        tức</a>
+                                </li>
+                                <li>
+                                    <a title="Khám phá" href="https://dantri.com.vn/du-lich/kham-pha.htm">Khám
+                                        phá</a>
+                                </li>
+                                <li>
+                                    <a title="Món ngon - Điểm đẹp"
+                                        href="https://dantri.com.vn/du-lich/mon-ngon-diem-dep.htm">Món
+                                        ngon - Điểm đẹp</a>
+                                </li>
+                                <li>
+                                    <a title="Tour hay - Khuyến mại"
+                                        href="https://dantri.com.vn//du-lich/tour-hay-khuyen-mai.htm">Tour
+                                        hay - Khuyến mại</a>
+                                </li>
+                                <li>
+                                    <a title="Video - Ảnh" href="https://dantri.com.vn//du-lich/video-anh.htm">Video
+                                        - Ảnh</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Tin tức pháp luật 24h, vụ án, hình sự"
+                            href="https://dantri.com.vn//phap-luat.htm">Pháp
+                            luật</a>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Nhịp sống trẻ, khởi nghiệp, giáo dục cộng đồng"
+                            href="https://dantri.com.vn//nhip-song-tre.htm">Nhịp
+                            sống trẻ</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Người Việt trẻ"
+                                        href="https://dantri.com.vn/nhip-song-tre/nguoi-viet-tre.htm">Người
+                                        Việt trẻ</a>
+                                </li>
+                                <li>
+                                    <a title="Teen đẹp" href="https://dantri.com.vn/nhip-song-tre/teen-dep.htm">Teen
+                                        đẹp</a>
+                                </li>
+                                <li>
+                                    <a title="Phóng sự trẻ"
+                                        href="https://dantri.com.vn/nhip-song-tre/phong-su-tre.htm">Phóng
+                                        sự trẻ</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover">
+                        <a class="" title="Sức mạnh số - Tin khoa học công nghệ kỹ thuật mới nhất, nghiên cứu ứng dụng"
+                            href="https://dantri.com.vn/suc-manh-so.htm">Sức
+                            mạnh số</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Máy tính - Mạng" href="https://dantri.com.vn/suc-manh-so/vi-tinh.htm">Máy
+                                        tính - Mạng</a>
+                                </li>
+                                <li>
+                                    <a title="Di động - Viễn thông"
+                                        href="https://dantri.com.vn/suc-manh-so/dien-thoai.htm">Di
+                                        động - Viễn thông</a>
+                                </li>
+                                <li>
+                                    <a title="Điện tử tiêu dùng"
+                                        href="https://dantri.com.vn/suc-manh-so/dien-may.htm">Điện
+                                        tử tiêu dùng</a>
+                                </li>
+                                <li>
+                                    <a title="Nghe nhìn" href="https://dantri.com.vn/suc-manh-so/nghe-nhin.htm">Nghe
+                                        nhìn</a>
+                                </li>
+                                <li>
+                                    <a title="Phần mềm - Bảo mật"
+                                        href="https://dantri.com.vn/suc-manh-so/phan-mem-bao-mat.htm">Phần
+                                        mềm - Bảo mật</a>
+                                </li>
+                                <li>
+                                    <a title="Thủ thuật - Mẹo vặt"
+                                        href="https://dantri.com.vn/suc-manh-so/thu-thuat.htm">Thủ
+                                        thuật - Mẹo vặt</a>
+                                </li>
+                                <li>
+                                    <a title="Thị trường công nghệ"
+                                        href="https://dantri.com.vn/suc-manh-so/thi-truong-cong-nghe.htm">Thị
+                                        trường công nghệ</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="dropdown dropdown--hover dropdown--right">
+                        <a class="" title="Ô tô xe máy | Thông tin thị trường oto xe máy, giá mua bán xe"
+                            href="https://dantri.com.vn/o-to-xe-may.htm">Xe
+                            ++</a>
+                        <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Thị trường xe"
+                                        href="https://dantri.com.vn/o-to-xe-may/thi-truong-xe.htm">Thị
+                                        trường xe</a>
+                                </li>
+                                <li>
+                                    <a title="Bảng giá ô tô"
+                                        href="https://dantri.com.vn/o-to-xe-may/bang-gia-o-to.htm">Bảng
+                                        giá ô tô</a>
+                                </li>
+                                <li>
+                                    <a title="Văn hoá xe" href="https://dantri.com.vn/o-to-xe-may/van-hoa-xe.htm">Văn
+                                        hoá xe</a>
+                                </li>
+                                <li>
+                                    <a title="Tư vấn xe" href="https://dantri.com.vn/o-to-xe-may/tu-van-xe.htm">Tư
+                                        vấn xe</a>
+                                </li>
+                                <li>
+                                    <a title="Đua xe" href="https://dantri.com.vn/o-to-xe-may/dua-xe.htm">Đua
+                                        xe</a>
+                                </li>
+                                <li>
+                                    <a title="Giá xe" href="https://dantri.com.vn/o-to-xe-may/gia-xe.htm">Giá
+                                        xe</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="others dropdown dropdown--hover dropdown--right" id="site-dropdown">
+                        <a id="site-dropdown-button">
+                            <i class="dt-icon fa fa-bars fa-2x"></i>
+                        </a>
+                        <div class="dropdown__content" id="site-dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                <li>
+                                    <a title="Khoa học" href="https://dantri.com.vn/khoa-hoc-cong-nghe.htm">
                                         Khoa học</a>
                                 </li>
                                 <li>
-                                    <a title="Blog" href="">
+                                    <a title="Blog" href="https://dantri.com.vn/blog.htm">
                                         Blog</a>
                                 </li>
                                 <li>
-                                    <a title="Du học" href="">
+                                    <a title="Du học" href="https://dantri.com.vn/du-hoc.htm">
                                         Du học</a>
                                 </li>
                                 <li>
-                                    <a title="Tuyển sinh" href="">
+                                    <a title="Tuyển sinh" href="https://dantri.com.vn/tuyen-sinh.htm">
                                         Tuyển sinh</a>
                                 </li>
                                 <li>
-                                    <a title="Fica" href="">
+                                    <a title="Fica" href="http://fica.vn">
                                         Fica</a>
                                 </li>
                                 <li>
-                                    <a title="Bạn đọc" href="">
+                                    <a title="Bạn đọc" href="https://dantri.com.vn/ban-doc.htm">
                                         Bạn đọc</a>
                                 </li>
                                 <li>
-                                    <a title="Đời sống" href="">
+                                    <a title="Đời sống" href="https://dantri.com.vn/doi-song.htm">
                                         Đời sống</a>
                                 </li>
                                 <li>
-                                    <a title="Chuyện lạ" href="">
+                                    <a title="Chuyện lạ" href="https://dantri.com.vn/chuyen-la.htm">
                                         Chuyện lạ</a>
                                 </li>
                                 <li>
-                                    <a title="Diễn đàn" href="">
+                                    <a title="Diễn đàn" href="https://dantri.com.vn/dien-dan.htm">
                                         Diễn đàn</a>
                                 </li>
                                 <li>
-                                    <a title="English" href="">
+                                    <a title="English" href="http://www.dtinews.vn">
                                         English</a>
                                 </li>
                                 <li>
-                                    <a title="Tình yêu" href="">
+                                    <a title="Tình yêu" href="https://dantri.com.vn/tinh-yeu-gioi-tinh.htm">
                                         Tình yêu</a>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </li>
-                </ul>
+
+                </ol>
             </div>
         </nav>
+
     </header>
 
     <main class="dt-main">
@@ -361,7 +653,7 @@
                                 </h2>
                                 <a class="news-item__sapo" title="Chính thức công bố điểm thi tốt nghiệp THPT 2020"
                                     href="https://dantri.com.vn/giao-duc-khuyen-hoc/chinh-thuc-cong-bo-diem-thi-tot-nghiep-thpt-2020-20200826214759024.htm">(Dân
-                                    trí);- Hôm nay (27/8), Bộ GD;ĐT đã công bố điểm thi tốt nghiệp THPT năm
+                                    trí)- Hôm nay (27/8) Bộ GDĐT đã công bố điểm thi tốt nghiệp THPT năm
                                     2020 của 63 tỉnh thành. Ngoài điểm thi, thí sinh có thể biết phổ điểm của từng môn,
                                     từng địa phương.</a>
                                 <ul class="news-item__related">
@@ -1379,8 +1671,7 @@
                             <li>
                                 <div class="news-item news-item news-item--stream news-item--left2right">
                                     <h3 class="news-item__title">
-                                        <a
-                                            href="https://dantri.com.vn/ban-doc/xe-doi-bat-nui-san-dat-nong-nghiep-trai-phep-lam-trai-nuoi-heo-khung-20200825210435120.htm">
+                                        <a href="https://dantri.com.vn/ban-doc/xe-doi-bat-nui-san-dat-nong-nghiep-trai-phep-lam-trai-nuoi-heo-khung-20200825210435120.htm"
                                             title="Xẻ đồi, bạt núi, san đất nông nghiệp trái phép làm trại nuôi heo
                                             “khủng”">
                                             Xẻ đồi, bạt núi, san đất nông nghiệp trái phép làm trại nuôi heo “khủng”
@@ -1601,7 +1892,7 @@
                                         <a class="news-item__sapo"
                                             title="Trung Quốc: Người mẹ 43 tuổi và con trai cùng đỗ đại học"
                                             href="https://dantri.com.vn/du-hoc/trung-quoc-nguoi-me-43-tuoi-va-con-trai-cung-do-dai-hoc-20200826090942441.htm">(Dân
-                                            trí);- Tham dự kỳ thi tuyển sinh đại học năm nay cùng với con trai, chị
+                                            trí)- Tham dự kỳ thi tuyển sinh đại học năm nay cùng với con trai, chị
                                             Naran, 43 tuổi, ở khu tự trị Nội Mông (Trung Quốc) đã đỗ ngành Quản trị Du
                                             lịch,
                                             còn con trai chị đỗ ngành Khoa học.</a>
@@ -4514,18 +4805,20 @@
                         </p>
                         <p>Liên hệ: <a href="tel:09.4554.0303">09.4554.0303</a></p>
                         <p>
-                            <a class="ng-isolate-scope"> <strong>Xem bản mobile</strong></a>
+                            <a class="ng-isolate-scope"><strong>Xem bản mobile</strong></a>
                         </p>
                         <div class="dt-footer__app clearfix">
-                            <a aria-label="Báo Dân trí ios" title="Báo Dân trí - Dantri.com.vn" target="_blank"
-                                rel="noopener"
+                            <a aria-label="Báo Dân trí ios" title="Báo Dân trí - Dantri.com.vn"
                                 href="https://apps.apple.com/vn/app/b%C3%A1o-d%C3%A2n-tr%C3%AD-dantri-com-vn/id1455334618?l=vi">
-                                <i class="dt-icon icon-app-store"></i>
+                                <img class="dt-icon"
+                                    src="https://cdnweb.dantri.com.vn/bundle/static/assets/app-store.svg"
+                                    style="width: 120px; height: 40px;" alt="ios" />
                             </a>
-                            <a aria-label="Báo Dân trí android" title="Báo Dân trí - Dantri.com.vn" target="_blank"
-                                rel="noopener"
+                            <a aria-label="Báo Dân trí android" title="Báo Dân trí - Dantri.com.vn"
                                 href="https://play.google.com/store/apps/details?id=vn.com.dantrinews.android">
-                                <i class="dt-icon icon-play-store"></i>
+                                <img class="dt-icon"
+                                    src="https://cdnweb.dantri.com.vn/bundle/static/assets/play-store.svg" alt="andro"
+                                    style="width: 120px; height: 40px;" />
                             </a>
                         </div>
                     </div>
@@ -4533,6 +4826,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
