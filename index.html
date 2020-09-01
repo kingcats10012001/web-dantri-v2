@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí </title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="https://dantri.com.vn/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
     <header class="dt-header">
 
-        <div class="dt-header___content">
+        <div class="dt-header___content hidden">
             <div class="container">
                 <div class="dt-header__logo">
                     <a title="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7" href="/">
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <nav class="site-menu site-menu--fixed">
+        <nav class="site-menu" id="navbar">
             <div class="container">
                 <ol class="site-menu__list list-unstyled">
 
@@ -636,6 +636,7 @@
         <div class="container clearfix">
             <div class="home-highlight clearfix">
                 <div class="col col--highlight-news clearfix">
+
                     <div class="col col--highlight-focus">
                         <div class="news-item news-item--highlight">
                             <a class="news-item__avatar"
@@ -669,11 +670,40 @@
                                             </a>
                                         </h2>
                                     </li>
+
+                                    <li>
+                                        <h2 class="news-item__related-item">
+                                            <a href="https://dantri.com.vn/tuyen-sinh/truong-dh-nha-trang-cong-bo-diem-san-xet-tuyen-o-3-phuong-thuc-20200901094848187.htm"
+                                                title="Trường ĐH Nha Trang công bố điểm sàn xét tuyển ở 3 phương thức                                                ">
+                                                Trường ĐH Nha Trang công bố điểm sàn xét tuyển ở 3 phương thức
+                                            </a>
+                                        </h2>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="news-item__related-item">
+                                            <a href="https://dantri.com.vn/tuyen-sinh/diem-san-xet-tuyen-vao-hoc-vien-chinh-sach-va-phat-trien-tu-180-tro-len-20200901135701949.htm"
+                                                title="Điểm sàn xét tuyển vào Học viện Chính sách và Phát triển từ 18,0 trở lên">
+                                                Điểm sàn xét tuyển vào Học viện Chính sách và Phát triển từ 18,0 trở lên
+                                            </a>
+                                        </h2>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="news-item__related-item">
+                                            <a href="https://dantri.com.vn/giao-duc-khuyen-hoc/mot-lop-co-23-em-tuyen-thang-thi-choi-cung-dat-tu-255-diem-xet-tuyen-dh-20200831141327537.htm"
+                                                title="Một lớp có 23 em tuyển thẳng, “thi chơi” cũng đạt từ 25,5 điểm xét tuyển ĐH">
+                                                Một lớp có 23 em tuyển thẳng, “thi chơi” cũng đạt từ 25,5 điểm xét tuyển
+                                                ĐH
+                                            </a>
+                                        </h2>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
-
                     </div>
+
                     <div class="col col--highlight-event">
                         <div class="highlight-event">
                             <h2 class="highlight-event__title">
@@ -786,6 +816,7 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="col col--highlight-top3">
                         <ul class="dt-list dt-list--top3">
                             <li>
@@ -853,9 +884,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="dt-divider"></div>
+
                 </div>
-                <div class="clearfix  ng-isolate-scope">
+
+                <div class="clearfix-divider dt-divider"></div>
+
+                <div class="clearfix ng-isolate-scope">
 
                     <div class="col col--primary" top-height="left">
                         <ul class="dt-list dt-list--lg">
@@ -869,7 +903,8 @@
                                             <i class="news-title-icon fa-video"> </i>
                                         </a>
                                     </h3>
-                                    <a class="news-item__avatar" href="https://dantri.com.vn/xa-hoi/can-canh-nhung-khau-dai-bac-sung-than-cong-co-20200826154044229.htm"
+                                    <a class="news-item__avatar"
+                                        href="https://dantri.com.vn/xa-hoi/can-canh-nhung-khau-dai-bac-sung-than-cong-co-20200826154044229.htm"
                                         title="Cận cảnh những khẩu đại bác, súng thần công cổ">
                                         <div class="dt-thumbnail dt-thumbnail--3x2">
                                             <img alt="Cận cảnh những khẩu đại bác, súng thần công cổ"
@@ -1037,7 +1072,9 @@
                                 </div>
                             </li>
                         </ul>
+                        <hr>
                         <section class="dt-video-list dt-section dt-section--fit dt-section--video my-5">
+
                             <header class="dt-section__header">
                                 <h3 class="dt-section__title">
                                     <a title="Tin tức video" class="clearfix"
@@ -1048,7 +1085,86 @@
                                 </h3>
                             </header>
 
-                        
+                            <div class=".dt-section__body ng-isolate-scope">
+                                <ul class="dt-list dt-list--home-video">
+                                    <li>
+                                        <div class="video-item video-item--highlight video-item--overlay">
+                                            <h3 class="video-item__title">
+                                                <a href="https://dantri.com.vn/video/ha-noi-nhung-goc-pho-lang-le-thu-minh-giua-mua-covid-19-125722.htm"
+                                                    title="Hà Nội: Những góc phố lặng lẽ thu mình giữa mùa Covid-19"
+                                                    class="ng-isolate-scope">
+                                                    Hà Nội: Những góc phố "lặng lẽ thu mình" giữa mùa Covid-19
+                                                </a>
+                                            </h3>
+                                            <video width="496px" height="279px" controls>
+                                                <source
+                                                    src="https://vcdn.dantri.com.vn/mp4/2020/09/01/cua-hang-dong-cua-lan-2-vi-dich-covid-19-1598944210185.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="video-item video-item--normal">
+                                            <video controls>
+                                                <source
+                                                    src="https://vcdn.dantri.com.vn/mp4/2020/09/01/dan-tri-1-1598922271499.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <div class="video-item__title">
+                                                <h3 class="video-item__title">
+                                                    <a href="https://dantri.com.vn/video/ha-noi-tuyen-duong-dai-hon-2-km-lut-tien-do-gan-20-nam-125709.htm"
+                                                        title="Hà Nội: Tuyến đường dài hơn 2 km lụt tiến độ gần 20 năm"
+                                                        class="ng-isolate-scope">
+                                                        Hà Nội: Tuyến đường dài hơn 2 km "lụt" tiến độ gần 20 năm
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="video-item video-item--normal">
+                                            <video controls>
+                                                <source
+                                                    src="https://vcdn.dantri.com.vn/mp4/2020/08/31/du-an-bac-tu-liem-1598889709289.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <div class="video-item__title">
+                                                <h3 class="video-item__title">
+                                                    <a href="https://dantri.com.vn/video/can-canh-duong-noi-dh-mo-dia-chat-vao-kcn-nam-thang-long-sap-hoan-thanh-125704.htm"
+                                                        title="Cận cảnh đường nối ĐH Mỏ - Địa chất vào KCN Nam Thăng Long sắp hoàn thành"
+                                                        class="ng-isolate-scope">
+                                                        Cận cảnh đường nối ĐH Mỏ - Địa chất vào KCN Nam Thăng Long
+                                                        sắp hoàn thành
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="video-item video-item--normal">
+                                            <video controls>
+                                                <source
+                                                    src="https://vcdn.dantri.com.vn/mp4/2020/09/01/rimpac-2020-ex-uss-durham-sinkex-WxYg72dWjII-1598925204310.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <div class="video-item__title">
+                                                <h3 class="video-item__title">
+                                                    <a href="https://dantri.com.vn/video/video-ten-lua-sat-thu-diet-ham-my-xuyen-thung-tau-do-bo-125713.htm"
+                                                        class="ng-isolate-scope"
+                                                        title="Video tên lửa sát thủ diệt hạm Mỹ xuyên thủng tàu đổ bộ">
+                                                        Video tên lửa “sát thủ diệt hạm” Mỹ xuyên thủng tàu đổ
+                                                        bộ</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
                         </section>
                         <hr>
                         <ul class="dt-list dt-list--lg">
@@ -2209,6 +2325,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2298,6 +2415,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2388,6 +2506,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2478,6 +2597,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2566,6 +2686,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2658,6 +2779,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2753,6 +2875,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2843,6 +2966,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -2933,6 +3057,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -3026,6 +3151,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--primary">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -3120,6 +3246,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <section class="dt-section dt-section--box dt-section--guong-sang">
                             <header class="dt-section__header">
                                 <h2 class="dt-section__title">
@@ -3166,6 +3293,7 @@
                                 </ul>
                             </div>
                         </section>
+
                         <div class="dt-tbt">
                             <div class="dt-tbt__label">Tổng biên tập</div>
                             <div class="dt-tbt__name">Phạm Tuấn Anh</div>
@@ -3227,10 +3355,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div id="adm_sticky_footer"></div>
+
                 <div class="dt-divider"></div>
+
                 <div class="row row-eq-height mb-5">
                     <div class="col-5">
                         <section class="dt-section dt-section--category">
@@ -4778,7 +4907,7 @@
                         </section>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </main>
@@ -4837,6 +4966,25 @@
             </div>
         </div>
     </footer>
+
+    <button class="dt-back-to">
+        <a href="#" class="dt-back-to-top">
+            <i class="fa fa-arrow-up"></i></a>
+    </button>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 
